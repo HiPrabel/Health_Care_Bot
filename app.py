@@ -54,9 +54,9 @@ def main():
         if user_input.strip():
             response = healthcare_chatbot(user_input)
 
-            st.markdown(f"<div class='chat-container'><p class='user-box'>👤 **You:** {user_input}</p></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='chat-container'><p class='user-box'>👤 You: {user_input}</p></div>", unsafe_allow_html=True)
             
-            st.markdown(f"<div class='chat-container'><p class='message-box'>🤖 **Assistant:** {response}</p></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='chat-container'><p class='message-box'>🤖 Assistant: {response}</p></div>", unsafe_allow_html=True)
         else:
             st.warning("⚠️ Please enter a message.")
 
