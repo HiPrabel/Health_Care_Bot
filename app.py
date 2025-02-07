@@ -46,7 +46,7 @@ def main():
         unsafe_allow_html=True
     )
 
-    st.markdown("<h1 class='title'>🤖 Healthcare Assistant</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title'>🩺 Healthcare Assistant</h1>", unsafe_allow_html=True)
 
     user_input = st.text_input("💬 How may I assist you today?", key="user_input")
 
@@ -56,7 +56,7 @@ def main():
 
             st.markdown(f"<div class='chat-container'><p class='user-box'>👤 You: {user_input}</p></div>", unsafe_allow_html=True)
             
-            st.markdown(f"<div class='chat-container'><p class='message-box'>🤖 Assistant: {response}</p></div>", unsafe_allow_html=True)
+            st.markdown(f"<div class='chat-container'><p class='message-box'>🩺 Assistant: {response}</p></div>", unsafe_allow_html=True)
         else:
             st.warning("⚠️ Please enter a message.")
 
